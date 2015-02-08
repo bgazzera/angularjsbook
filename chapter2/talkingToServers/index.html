@@ -16,7 +16,7 @@
     </table>
     <script>
       function ShoppingController($scope, $http) {
-        $http.get('/products').success(function(data, status, headers, config) {
+        $http.get('http://localhost:3000/products').success(function(data, status, headers, config) {
           $scope.items = data;
         });
       }

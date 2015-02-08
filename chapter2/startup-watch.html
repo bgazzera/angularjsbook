@@ -17,6 +17,8 @@
         };
 
         $scope.$watch('funding.startingEstimate', computeNeeded);
+
+        $scope.$watch('funding.startingEstimate', function(){alert("all");});
       }
     </script>
   </body>
